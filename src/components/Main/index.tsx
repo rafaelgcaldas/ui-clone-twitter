@@ -16,27 +16,27 @@ import {
 
 const Main: React.FC = () => {
   return (
-      <Container>
-          <Header>
-            <button>
-                <BackIcon />
-            </button>
+		<Container>
+			<Header>
+				<button>
+						<BackIcon />
+				</button>
 
-            <ProfileInfo>
-                <strong> Rafael Gomes</strong>
-                <span>999 Tweets</span>
-            </ProfileInfo>
-        </Header>
+				<ProfileInfo>
+						<strong> Rafael Gomes</strong>
+						<span>999 Tweets</span>
+				</ProfileInfo>
+			</Header>
 
-        <ProfilePage />
+			<ProfilePage />
 
-        <BottomMenu>
-            <HomeIcon className="active"/>
-            <SearchIcon />
-            <BellIcon />
-            <EmailIcon />
-        </BottomMenu>
-      </Container>
+			<BottomMenu>
+					<HomeIcon className="active"/>
+					<SearchIcon />
+					<BellIcon />
+					<EmailIcon />
+			</BottomMenu>
+		</Container>
   );
 }
 
