@@ -22,7 +22,7 @@ export const SearchWrapper = styled.div`
     z-index: 2;
     background: var(--primary);
 
-    max-height: 57px;
+    max-height: 44px;
 `;
 
 export const SearchInput = styled.input`
@@ -52,7 +52,7 @@ export const SearchInput = styled.input`
     &:focus {
         border: 1px solid var(--twitter);
 
-        ~svg {
+        ~ svg {
             fill: var(--twitter);
         }
     }
@@ -66,6 +66,13 @@ export const SearchIcon = styled(Search)`
 `;
 
 export const Body = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 57px 24px 200px;
+    margin-top: 3px;
 
+    > div + div {
+        margin-top: 15px;
+    }
 `;
 

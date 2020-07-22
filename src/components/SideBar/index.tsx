@@ -1,5 +1,7 @@
 import React from 'react';
 
+import List from '../List';
+
 import { 
     Container,
     SearchWrapper,
@@ -7,7 +9,6 @@ import {
     SearchIcon,
     Body,
 } from './styles';
-import { Search } from '../../styles/Icons';
 
 const SideBar: React.FC = () => {
   return (
@@ -18,7 +19,22 @@ const SideBar: React.FC = () => {
           </SearchWrapper>
 
           <Body>
-            <p>{'Lorem ipsum dolor sit amet. '.repeat(90)}</p>
+            <List 
+              title="Talvez você curta"
+              elements={[
+                <h1>Teste</h1>,
+                <h1>Teste</h1>,
+                <h1>Teste</h1>,
+              ]}
+            />
+            <List 
+              title="Talvez você curta"
+              elements={[
+                <h1>Teste</h1>,
+                <h1>Teste</h1>,
+                <h1>Teste</h1>,
+              ]}
+            />
           </Body>
       </Container>
   );
